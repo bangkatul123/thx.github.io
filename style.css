@@ -1,0 +1,116 @@
+body {
+        font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+                display: flex;
+                    justify-content: center;
+                        align-items: center;
+                            min-height: 100vh;
+                                margin: 0;
+                                    overflow: hidden; /* Mencegah scrollbar */
+                                    }
+
+                                    .card {
+                                        background-color: white;
+                                            padding: 30px;
+                                                border-radius: 15px;
+                                                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                                                        text-align: center;
+                                                            overflow: hidden; /* Mencegah konten meluap */
+                                                                animation: fadeIn 1s ease-in-out; /* Animasi fade in */
+                                                                }
+
+                                                                @keyframes fadeIn {
+                                                                    from {
+                                                                            opacity: 0;
+                                                                                }
+                                                                                    to {
+                                                                                            opacity: 1;
+                                                                                                }
+                                                                                                }
+
+                                                                                                img {
+                                                                                                    max-width: 350px;
+                                                                                                        height: auto;
+                                                                                                            border-radius: 10px;
+                                                                                                                margin-bottom: 20px;
+                                                                                                                    animation: slideInLeft 1s ease-in-out; /* Animasi slide in dari kiri */
+                                                                                                                    }
+
+                                                                                                                    @keyframes slideInLeft {
+                                                                                                                        from {
+                                                                                                                                transform: translateX(-100%);
+                                                                                                                                        opacity: 0;
+                                                                                                                                            }
+                                                                                                                                                to {
+                                                                                                                                                        transform: translateX(0);
+                                                                                                                                                                opacity: 1;
+                                                                                                                                                                    }
+                                                                                                                                                                    }
+
+                                                                                                                                                                    video {
+                                                                                                                                                                        max-width: 500px;
+                                                                                                                                                                            height: auto;
+                                                                                                                                                                                border-radius: 10px;
+                                                                                                                                                                                    margin-bottom: 30px;
+                                                                                                                                                                                        animation: slideInRight 1s ease-in-out; /* Animasi slide in dari kanan */
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        @keyframes slideInRight {
+                                                                                                                                                                                            from {
+                                                                                                                                                                                                    transform: translateX(100%);
+                                                                                                                                                                                                            opacity: 0;
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                    to {
+                                                                                                                                                                                                                            transform: translateX(0);
+                                                                                                                                                                                                                                    opacity: 1;
+                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                        h1 {
+                                                                                                                                                                                                                                            color: #333;
+                                                                                                                                                                                                                                                margin-bottom: 15px;
+                                                                                                                                                                                                                                                    animation: fadeInUp 1s ease-in-out; /* Animasi fade in dari bawah */
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                    @keyframes fadeInUp {
+                                                                                                                                                                                                                                                        from {
+                                                                                                                                                                                                                                                                transform: translateY(20px);
+                                                                                                                                                                                                                                                                        opacity: 0;
+                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                to {
+                                                                                                                                                                                                                                                                                        transform: translateY(0);
+                                                                                                                                                                                                                                                                                                opacity: 1;
+                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                    p {
+                                                                                                                                                                                                                                                                                                        color: #666;
+                                                                                                                                                                                                                                                                                                            line-height: 1.7;
+                                                                                                                                                                                                                                                                                                                margin-bottom: 20px;
+                                                                                                                                                                                                                                                                                                                    animation: fadeIn 1s ease-in-out; /* Animasi fade in */
+                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                    .heart {
+                                                                                                                                                                                                                                                                                                                        color: red;
+                                                                                                                                                                                                                                                                                                                            animation: pulse 1s infinite; /* Animasi berdenyut */
+                                                                                                                                                                                                                                                                                                                                cursor: pointer; /* Mengubah cursor menjadi pointer saat dihover */
+                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                @keyframes pulse {
+                                                                                                                                                                                                                                                                                                                                    0% {
+                                                                                                                                                                                                                                                                                                                                            transform: scale(1);
+                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                    50% {
+                                                                                                                                                                                                                                                                                                                                                            transform: scale(1.2);
+                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                    100% {
+                                                                                                                                                                                                                                                                                                                                                                            transform: scale(1);
+                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                /* Efek hover pada kartu */
+                                                                                                                                                                                                                                                                                                                                                                                .card:hover {
+                                                                                                                                                                                                                                                                                                                                                                                    transform: scale(1.02);
+                                                                                                                                                                                                                                                                                                                                                                                        transition: transform 0.3s ease-in-out;
+                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                        
